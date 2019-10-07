@@ -17,6 +17,15 @@
 		033675A923437F5A0012A079 /* LogInPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033675A823437F5A0012A079 /* LogInPageViewController.swift */; };
 		033675AB234389CB0012A079 /* SignUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033675AA234389CB0012A079 /* SignUpPageViewController.swift */; };
 		033675AD23438A170012A079 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033675AC23438A170012A079 /* ForgetPasswordViewController.swift */; };
+		CA4C17C72344EB8300252DAA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4C17C62344EB8300252DAA /* HomeViewController.swift */; };
+		CA4C17C92344EBBA00252DAA /* BookMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4C17C82344EBBA00252DAA /* BookMarkViewController.swift */; };
+		CA5560792344EFD4005D5988 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5560782344EFD4005D5988 /* NewPostViewController.swift */; };
+		CA55607D2344F357005D5988 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55607C2344F357005D5988 /* SecondViewController.swift */; };
+		CA55607F23463442005D5988 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55607E23463442005D5988 /* HomeCollectionViewController.swift */; };
+		CA55608123463539005D5988 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55608023463539005D5988 /* FirstTableViewController.swift */; };
+		CA556083234635C5005D5988 /* SecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA556082234635C5005D5988 /* SecondTableViewController.swift */; };
+		CA556085234635DB005D5988 /* ThirdTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA556084234635DB005D5988 /* ThirdTableViewController.swift */; };
+		CA556087234635EF005D5988 /* FourthTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA556086234635EF005D5988 /* FourthTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +41,15 @@
 		033675A823437F5A0012A079 /* LogInPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPageViewController.swift; sourceTree = "<group>"; };
 		033675AA234389CB0012A079 /* SignUpPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPageViewController.swift; sourceTree = "<group>"; };
 		033675AC23438A170012A079 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		CA4C17C62344EB8300252DAA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CA4C17C82344EBBA00252DAA /* BookMarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkViewController.swift; sourceTree = "<group>"; };
+		CA5560782344EFD4005D5988 /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		CA55607C2344F357005D5988 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		CA55607E23463442005D5988 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		CA55608023463539005D5988 /* FirstTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
+		CA556082234635C5005D5988 /* SecondTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewController.swift; sourceTree = "<group>"; };
+		CA556084234635DB005D5988 /* ThirdTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTableViewController.swift; sourceTree = "<group>"; };
+		CA556086234635EF005D5988 /* FourthTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,10 +83,19 @@
 			isa = PBXGroup;
 			children = (
 				03367592234358680012A079 /* AppDelegate.swift */,
+				CA4C17C62344EB8300252DAA /* HomeViewController.swift */,
 				03367594234358680012A079 /* SceneDelegate.swift */,
 				03367596234358680012A079 /* MainTabController.swift */,
+				CA55607C2344F357005D5988 /* SecondViewController.swift */,
 				033675A623435C0B0012A079 /* AppShowUpViewController.swift */,
 				03367598234358680012A079 /* Main.storyboard */,
+				CA55608023463539005D5988 /* FirstTableViewController.swift */,
+				CA55607E23463442005D5988 /* HomeCollectionViewController.swift */,
+				CA556082234635C5005D5988 /* SecondTableViewController.swift */,
+				CA556084234635DB005D5988 /* ThirdTableViewController.swift */,
+				CA556086234635EF005D5988 /* FourthTableViewController.swift */,
+				CA5560782344EFD4005D5988 /* NewPostViewController.swift */,
+				CA4C17C82344EBBA00252DAA /* BookMarkViewController.swift */,
 				033675AC23438A170012A079 /* ForgetPasswordViewController.swift */,
 				033675AA234389CB0012A079 /* SignUpPageViewController.swift */,
 				033675A823437F5A0012A079 /* LogInPageViewController.swift */,
@@ -150,13 +177,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA55608123463539005D5988 /* FirstTableViewController.swift in Sources */,
+				CA55607D2344F357005D5988 /* SecondViewController.swift in Sources */,
 				033675A723435C0B0012A079 /* AppShowUpViewController.swift in Sources */,
+				CA4C17C92344EBBA00252DAA /* BookMarkViewController.swift in Sources */,
 				03367597234358680012A079 /* MainTabController.swift in Sources */,
 				03367593234358680012A079 /* AppDelegate.swift in Sources */,
+				CA4C17C72344EB8300252DAA /* HomeViewController.swift in Sources */,
 				033675AB234389CB0012A079 /* SignUpPageViewController.swift in Sources */,
+				CA556085234635DB005D5988 /* ThirdTableViewController.swift in Sources */,
+				CA556087234635EF005D5988 /* FourthTableViewController.swift in Sources */,
 				033675AD23438A170012A079 /* ForgetPasswordViewController.swift in Sources */,
 				033675A923437F5A0012A079 /* LogInPageViewController.swift in Sources */,
+				CA55607F23463442005D5988 /* HomeCollectionViewController.swift in Sources */,
+				CA556083234635C5005D5988 /* SecondTableViewController.swift in Sources */,
 				03367595234358680012A079 /* SceneDelegate.swift in Sources */,
+				CA5560792344EFD4005D5988 /* NewPostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +339,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZ6983FPX7;
 				INFOPLIST_FILE = MForum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,6 +358,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZ6983FPX7;
 				INFOPLIST_FILE = MForum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -9,10 +9,21 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegate ,UIScrollViewDelegate{
 
+    var window: UIWindow?
+    
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        if viewController is SecondViewController {
+            if let newVC = tabBarController.storyboard?.instantiateViewController(withIdentifier: "NewPostViewController"){
+                tabBarController.present(newVC, animated: true)
+                return false
+            }//按newpost時彈出newpost視窗
+        }
+        return true
+    }
 
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
