@@ -9,6 +9,16 @@
 import UIKit
 
 class ThirdTableViewController: UITableViewController {
+    
+    override func viewWillAppear(_ animated: Bool) {
+          super.viewWillAppear(animated)
+          print("Third VC will appear")
+      }
+      
+      override func viewWillDisappear(_ animated: Bool) {
+          super.viewWillDisappear(animated)
+          print("Third VC will disappear")
+      }
 
     override func viewDidLoad() {
         super.viewDidLoad()
