@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegate, UITextFieldDelegate {
 
     var window: UIWindow?
     
@@ -25,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
 
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure() //connect with Fireabase
         // Override point for customization after application launch.
         return true
     }

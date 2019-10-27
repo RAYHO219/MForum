@@ -11,6 +11,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     
+    
     enum TabIndex : Int {
          case firstChildTab = 0
          case secondChildTab = 1
@@ -55,6 +56,8 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       
         
         segmentedControl.initUI()
         segmentedControl.selectedSegmentIndex = TabIndex.firstChildTab.rawValue
