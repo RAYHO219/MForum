@@ -40,7 +40,7 @@ class SignUpPageViewController: UIViewController {
                      
                      // 建立帳號
                      Auth.auth().createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!) { (user, error) in
-                         
+                        
                          // 註冊失敗
                          if error != nil {
                             let alertMessage = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
@@ -63,6 +63,7 @@ class SignUpPageViewController: UIViewController {
                         }
                      }
     }
+    
     
     
     

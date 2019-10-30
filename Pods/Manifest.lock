@@ -95,6 +95,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Auth
+  - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
   - SwiftyJSON
@@ -140,6 +141,6 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: c854f45f2063e96db16a7dbe78f8c20cc1fa584f
+PODFILE CHECKSUM: 6653d29dba06f079a300d80b2f7ae7837135f0a6
 
 COCOAPODS: 1.5.2
