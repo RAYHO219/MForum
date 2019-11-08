@@ -14,7 +14,7 @@ class MainTabController: UITabBarController, UITabBarControllerDelegate {
 
     override func viewDidLoad() {
         
-
+        self.navigationController?.isNavigationBarHidden = true
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.

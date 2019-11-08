@@ -7,8 +7,54 @@
 //
 
 import UIKit
+import Firebase
 
 class ForgetPasswordViewController: UIViewController {
+    
+    @IBOutlet weak var emailTextField : UITextField!
+    
+    @IBAction func ResetPassword(_sender: AnyObject){
+        
+        if self.emailTextField.text == "" {
+            
+            let alerMessage = UIAlertController(title: "請輸入EMAIL", message: nil, preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+            alerMessage.addAction(cancelAction)
+             
+            present(alerMessage, animated: true, completion: nil)
+        }
+        
+        else {
+            
+            Auth.auth().sendPasswordReset(withEmail: self.emailTextField.text!, completion: {(error) in
+                
+                var title = ""
+                var message = ""
+                
+                if error != nil {
+                    title = "Error"
+                    message = (error?.localizedDescription)!
+                } else {
+                    title = "Success"
+                    message = "Password reset email sent."
+                    self.emailTextField.text = ""
+                }
+                
+                let alerMessage = UIAlertController(title: title, message: message, preferredStyle: .alert)
+                           let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                           alerMessage.addAction(cancelAction)
+                            
+                self.present(alerMessage, animated: true, completion: nil)
+            })
+            
+        }
+        
+        
+        
+        
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

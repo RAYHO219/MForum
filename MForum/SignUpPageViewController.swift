@@ -18,8 +18,9 @@ class SignUpPageViewController: UIViewController {
         
        let email = self.emailTextField.text
        let password = self.passwordTextField.text
+       let name = self.nameTextField.text
          
-                     if email == "" || password == "" {
+                     if email == "" || password == "" || name == "" {
                        let alerMessage = UIAlertController(title: "請輸入EMAIL和密碼", message: nil, preferredStyle: .alert)
                        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
                        alerMessage.addAction(cancelAction)
@@ -51,6 +52,16 @@ class SignUpPageViewController: UIViewController {
                             
                          }
                          else {
+                            
+                            let user = Auth.auth().currentUser
+                            if let user = user {
+                                let changeRequest = user.createProfileChangeRequest()
+                                
+                                changeRequest.displayName = self.nameTextField.text
+                                
+                            }
+                            
+                           
                         
                             let alertMessage = UIAlertController(title: "註冊成功", message: nil, preferredStyle: .alert)
                             let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)

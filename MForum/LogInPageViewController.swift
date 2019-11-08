@@ -50,10 +50,10 @@ class LogInPageViewController: UIViewController, UITextFieldDelegate {
         }
             // 登入成功並顯示已登入
         else {
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainTabController")
-            self.present(vc!, animated: true, completion: nil)
-            
-            
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainTabController") as! MainTabController
+            self.navigationController?.pushViewController(vc, animated: true)
+
+
             }
             
             
@@ -66,6 +66,7 @@ class LogInPageViewController: UIViewController, UITextFieldDelegate {
     
 
     override func viewDidLoad() {
+        
         
         emailTextField.delegate = self
         passwordTextField.delegate = self
