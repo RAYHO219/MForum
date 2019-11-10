@@ -30,13 +30,25 @@ class NewPostViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     @IBAction func addPostButton (_ sender: AnyObject){
         
+//        //set reference
 //        var ref: DatabaseReference!
 //        ref = Database.database().reference(withPath: "POST")
-        
-        
+//
+//        let title = TitleTextField.text
+//        let detail = DetailTextView.text
+//
+//
+//       // Get current user info
+//        let userId: String = (Auth.auth().currentUser?.uid)!
+//
+//        // Create reference to firebase
+//        let POSTref = ref.childByAutoId()
+//        let key = POSTref.key
+//
+//        let post = PostItem(title: title!, detail: detail!)
+
+    
     }
-    
-    
     
 
     override func viewDidLoad() {
